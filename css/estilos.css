@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box; /*Para que respete los margenes*/
+}
+html{
+    scroll-behavior: smooth; /*para dar el efecto de ir a la parte del boton que se undio*/
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;} /*quitarle el estilo a la lista como el circulito*/
+
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+button{
+    color: white;
+    background-color: #c53232;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    background-color: #a72626;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/*FIGURA HOME EN EL HEADER*/
+#figura{
+    color: red;
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*La Casa De La Guadaña*/
+header .logo{
+    margin: 0;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1.6em;
+    display: flex;
+    color: black;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+header{
+    background-color: #a72626;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none; /*Para quitarle el subrayado*/
+    color: black;
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+header a:hover{
+    color: #4750ca;
+    background-color: antiquewhite;
+}
+div.container{
+    font-size: 1.5em;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("/imagenes/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    font-size: 5em;
+    font-stretch: ultra-expanded;
+    color: white;
+}
+.color-acento{
+    color: red;
+}
+#quienes-somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#servicios{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#servicios .container{
+    padding: 50px 0px;
+}
+#servicios h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+#servicios p{
+    display: none;
+}
+#servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#servicios button{
+    font-size: 1em;
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("/imagenes/Guadaa-Stihl-Original-Fs-55-20190921210235.6143850015.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("/imagenes/motobomba-honda-alta-presion-wh20x-basarian2.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("/imagenes/repuestos-originales-para-vehiculos-autos-motos.jpg");
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+#formulario .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+    padding-bottom: 10px;
+}
+#formulario p{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#formulario input{
+    padding: 10px;
+    height: 60px;
+    width: 400px;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0;
+    padding: 5px;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------VERSION DESKTOP FRIENDLY---------------------------*/
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    /*FIGURA HOME EN EL HEADER*/
+    #figura{
+        display: inline;
+        padding-left: 10px;
+    }
+    /*La Casa De La Guadaña*/
+    header .logo{
+        display: inline;
+    }
+    /*QUIENES SOMOS------------------------------*/
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienes-somos h2{
+        margin-top: 0;
+    }
+    #quienes-somos .img-container{
+        background-image: url("/imagenes/175705b5715e46b98b9a85e9db1d5fe1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #servicios .productos{
+        display: flex;
+        justify-content: center;
+    }
+    #servicios p{
+        display: block;
+    }
+    /*CARACTERISTICAS------------------------------*/
+    #caracteristicas{
+        background-image: url("/imagenes/Fortaleciendo-la-disciplina-.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 600px) 120px;
+        border-radius: 5px;
+    }
+    #caracteristicas .container{
+        text-align: initial;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+    /*CONTACTO------------------------------*/
+
+    /*FOOTER------------------------------*/
+    footer .container{
+        justify-content: flex-end;
+    }
+    footer p{
+        font-size: 0.7em;
+    }
+}
