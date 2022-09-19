@@ -88,7 +88,7 @@ div.container{
     flex-direction: column;
     height: 90vh;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/imagenes/maxresdefault.jpg");
+    url("../imagenes/maxresdefault.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -132,15 +132,15 @@ div.container{
 }
 .carta:first-child{
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/imagenes/Guadaa-Stihl-Original-Fs-55-20190921210235.6143850015.jpg");
+    url("../imagenes/Guadaa-Stihl-Original-Fs-55-20190921210235.6143850015.jpg");
 }
 .carta:nth-child(2){
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/imagenes/motobomba-honda-alta-presion-wh20x-basarian2.jpg");
+    url("../imagenes/motobomba-honda-alta-presion-wh20x-basarian2.jpg");
 }
 .carta:nth-child(3){
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/imagenes/repuestos-originales-para-vehiculos-autos-motos.jpg");
+    url("../imagenes/repuestos-originales-para-vehiculos-autos-motos.jpg");
 }
 #caracteristicas .container{
     text-align: center;
@@ -227,7 +227,7 @@ footer .container{
         margin-top: 0;
     }
     #quienes-somos .img-container{
-        background-image: url("/imagenes/175705b5715e46b98b9a85e9db1d5fe1.jpg");
+        background-image: url("../imagenes/175705b5715e46b98b9a85e9db1d5fe1.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -242,7 +242,7 @@ footer .container{
     }
     /*CARACTERISTICAS------------------------------*/
     #caracteristicas{
-        background-image: url("/imagenes/Fortaleciendo-la-disciplina-.png");
+        background-image: url("../imagenes/Fortaleciendo-la-disciplina-.png");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 600px) 120px;
